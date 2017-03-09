@@ -3,6 +3,7 @@
 ## Description
 
 This repository purpose is to provide ready to use docker templates to provision development machines.
+For a vagrant equivalent, please check https://github.com/runtimerevolution/vagrant-dev-templates
 
 ## Install Dependencies
 
