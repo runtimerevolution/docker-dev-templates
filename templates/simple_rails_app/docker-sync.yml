@@ -5,5 +5,5 @@ syncs:
     dest: '/app'
     sync_host_ip: 'auto'
     sync_excludes_type: 'Path'
-    sync_excludes: ['.git','.gitignore','sass-cache','.sass-cache','tmp/*','docker-compose.yml','docker-sync.yml','data/*']
+    sync_excludes: ['.git','.gitignore','docker-compose.yml','docker-sync.yml','data/*']
     sync_strategy: unison
