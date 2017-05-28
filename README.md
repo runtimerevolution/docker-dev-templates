@@ -11,8 +11,6 @@ For a vagrant equivalent, please check https://github.com/runtimerevolution/vagr
     * https://docs.docker.com/engine/installation/mac/#/docker-for-mac
 * Install [docker-sync](http://docker-sync.io)
     * `gem install docker-sync`
-    * `brew install unison`
-    * `easy_install pip && pip install macfsevents`
 
 ## Usages
 
@@ -28,8 +26,8 @@ For a vagrant equivalent, please check https://github.com/runtimerevolution/vagr
 ### Workflow
 
 * Start docker-sync to enable fast file syncing between host and the development containers
-    * `docker-sync-daemon start`
-    * Run `docker-sync-daemon stop` to stop
+    * `docker-sync start`
+    * Run `docker-sync stop` to stop
 * Start docker-compose
     * Execute `docker-compose up -d` to start on services in the background.
     * Execute `docker-compose up -d service_name [service_name 2]` to start one or more specific containers in the background.
@@ -41,10 +39,10 @@ For a vagrant equivalent, please check https://github.com/runtimerevolution/vagr
         * `docker-compose run --rm web bash`
 * Stop developing for the day.
     * Stop docker containers with `docker-compose stop`
-    * Stop docker-sync with `docker-sync-daemon stop`
+    * Stop docker-sync with `docker-sync stop`
 * Stop developing and cleanup
     * Stop and delete docker containers with `docker-compose down -v`
-    * Stop docker-sync with `docker-sync-daemon stop`
+    * Stop docker-sync with `docker-sync stop`
     * Delete docker-sync containers with `docker-sync clean`
 * Debug with pry on a running container
     * Fetch the running container id with `docker ps` (hint: search for the container command)

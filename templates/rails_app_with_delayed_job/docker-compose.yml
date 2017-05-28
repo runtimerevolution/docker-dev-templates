@@ -5,7 +5,7 @@ services:
     image: <appname>
     volumes:
       - ~/.ssh/:/root/.ssh/
-      - <appname>-sync:/app:rw
+      - <appname>-sync:/app:nocopy
     ports:
       - "3000:3000"
     environment:
@@ -25,7 +25,7 @@ services:
     image: <appname>
     volumes:
       - ~/.ssh/:/root/.ssh/
-      - <appname>-sync:/app:rw
+      - <appname>-sync:/app:nocopy
     environment:
       DATABASE_HOST: db
       DATABASE_USER: root
